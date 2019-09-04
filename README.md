@@ -1,1 +1,1 @@
-# react_learning_game
+React template app with ant design

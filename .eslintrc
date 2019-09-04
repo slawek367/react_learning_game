@@ -1,0 +1,90 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "plugins": ["prettier", "jest", "react"],
+  "rules": {
+    "semi": ["error", "always"],
+    "comma-dangle": ["error", "always-multiline"],
+    "max-len": ["error", { "code": 105 }],
+    "no-param-reassign": 0,
+    "no-use-before-define": ["error", { "variables": false }],
+    "import/no-named-as-default": "off",
+    "quotes": ["error", "single"],
+    "jsx-quotes": ["error", "prefer-single"],
+    "indent": ["error", 4],
+    "import/prefer-default-export": "off",
+    "react/jsx-boolean-value": [2, "always"],
+    "react/jsx-closing-bracket-location": [
+      2,
+      {
+        "location": "tag-aligned"
+      }
+    ],
+    "react/jsx-curly-spacing": [2, "never"],
+    "react/jsx-equals-spacing": [2, "never"],
+    "react/jsx-filename-extension": 2,
+    "react/jsx-first-prop-new-line": [2, "multiline"],
+    "react/jsx-handler-names": 0,
+    "react/jsx-indent": [2, 4],
+    "react/jsx-indent-props": [2, 4],
+    "react/jsx-key": 2,
+    "react/jsx-max-props-per-line": [
+      2,
+      {
+        "maximum": 1
+      }
+    ],
+    "react/jsx-no-bind": 0,
+    "react/jsx-no-comment-textnodes": 2,
+    "react/jsx-no-duplicate-props": [
+      2,
+      {
+        "ignoreCase": false
+      }
+    ],
+    "react/jsx-no-literals": 0,
+    "react/jsx-no-target-blank": 2,
+    "react/jsx-no-undef": 2,
+    "react/jsx-pascal-case": 2,
+    "react/jsx-tag-spacing": [
+      2,
+      {
+        "closingSlash": "never",
+        "beforeSelfClosing": "never",
+        "afterOpening": "never"
+      }
+    ],
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/jsx-wrap-multilines": 2
+  },
+  "env": {
+    "jest": true
+  },
+  "globals": {
+    "window": true,
+    "document": true,
+    "localStorage": true,
+    "FormData": true,
+    "FileReader": true,
+    "Blob": true,
+    "navigator": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "src"]
+      }
+    }
+  },
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "impliedStrict": true,
+      "modules": true,
+      "experimentalObjectRestSpread": true
+    }
+  }
+}
