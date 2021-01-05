@@ -68,7 +68,7 @@
     "@babel/runtime": "^7.4.5",
     "@svgr/webpack": "^4.3.2",
     "antd": "^3.20.0",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "dotenv-webpack": "^1.7.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
